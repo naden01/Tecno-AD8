@@ -1,0 +1,4016 @@
+{
+    "DBG": {
+        "base": "0xa0c2140",
+        "size": "0x100",
+        "vbf_id": 8,
+        "msg_cnt": 802,
+        "msg_tbl": [
+            null,
+            {
+                "id": 1,
+                "msg": "mantissa = %lld, exponent = %d",
+                "param_num": 2
+            },
+            {
+                "id": 2,
+                "msg": "z32e7=%d to int64 wrap around",
+                "param_num": 1
+            },
+            {
+                "id": 3,
+                "msg": "out_mantissa = %lld, out_expo = %d",
+                "param_num": 2
+            },
+            {
+                "id": 4,
+                "msg": "lz_out = %d",
+                "param_num": 1
+            },
+            {
+                "id": 5,
+                "msg": "\\nADD: a_mantissa = %d, a_expo = %d, b_mantissa = %d, b_expo = %d",
+                "param_num": 4
+            },
+            {
+                "id": 6,
+                "msg": "ADD: out_mantissa = %d, out_expo = %d",
+                "param_num": 2
+            },
+            {
+                "id": 7,
+                "msg": "a_mantissa/b_mantissa) = %d",
+                "param_num": 1
+            },
+            {
+                "id": 8,
+                "msg": "frame_cnt = %d, fft_in_tar_mic[2*%d] = %d, fft_in_tar_mic[2*%d+1] = %d",
+                "param_num": 5
+            },
+            {
+                "id": 9,
+                "msg": "frame_cnt = %d, fft_in_ref_mic[2*%d] = %d, fft_in_ref_mic[2*%d+1] = %d",
+                "param_num": 5
+            },
+            {
+                "id": 10,
+                "msg": "frame_cnt = %d, cpsd_pri[2*%d+1] = %lld",
+                "param_num": 3
+            },
+            {
+                "id": 11,
+                "msg": "cpsd_pri[2*%d] = %lld",
+                "param_num": 2
+            },
+            {
+                "id": 12,
+                "msg": "cpsd2_pri[2*%d] = %lld",
+                "param_num": 2
+            },
+            {
+                "id": 13,
+                "msg": "",
+                "param_num": 0
+            },
+            {
+                "id": 14,
+                "msg": "frame_cnt = %d, z32e7toint64(H_num[2*%d]) = %d, z32e7toint64(H_den[2*%d]) = %d, H_imag[%d] = %d\\n",
+                "param_num": 7
+            },
+            {
+                "id": 15,
+                "msg": "[BF cali] Out of spec at %dHz.",
+                "param_num": 1
+            },
+            {
+                "id": 16,
+                "msg": "z32e7toint64(H_num[2*%d]) = %d, z32e7toint64(H_num[2*%d+1]) = %d, z32e7toint64(H_den[2*%d]) = %d, H_real[%d] = %d, H_imag[%d] = %d",
+                "param_num": 10
+            },
+            {
+                "id": 17,
+                "msg": "mantissa_ref_mic = %d, IgoFixLog2(mantissa_ref_mic) = %d, avg_frame_rms_ref_mic_db = %f",
+                "param_num": 3
+            },
+            {
+                "id": 18,
+                "msg": "mantissa_tar_mic = %d, IgoFixLog2(mantissa_tar_mic) = %d, avg_frame_rms_tar_mic_db = %f",
+                "param_num": 3
+            },
+            {
+                "id": 19,
+                "msg": "mantissa_ref_mic_high_freq = %d, IgoFixLog2(mantissa_ref_mic_high_freq) = %d, high_freq_avg_frame_rms_ref_mic_db = %f",
+                "param_num": 3
+            },
+            {
+                "id": 20,
+                "msg": "mantissa_tar_mic_high_freq = %d, IgoFixLog2(mantissa_tar_mic_high_freq) = %d, high_freq_avg_frame_rms_tar_mic_db = %f",
+                "param_num": 3
+            },
+            {
+                "id": 21,
+                "msg": "[BF cali] SEL-GND DMIC disappear",
+                "param_num": 0
+            },
+            {
+                "id": 22,
+                "msg": "[BF cali] SEL-VDD DMIC disappear",
+                "param_num": 0
+            },
+            {
+                "id": 23,
+                "msg": "[BF cali] White noise detection fails. Please play the white noise wave",
+                "param_num": 0
+            },
+            {
+                "id": 24,
+                "msg": "[BF cali] power difference > 3dB",
+                "param_num": 0
+            },
+            {
+                "id": 25,
+                "msg": "[BF cali] BF calibration success.",
+                "param_num": 0
+            },
+            {
+                "id": 26,
+                "msg": "G_post = 0x%6x\\n",
+                "param_num": 1
+            },
+            {
+                "id": 27,
+                "msg": "[NR switch] nn_switch = %d",
+                "param_num": 1
+            },
+            {
+                "id": 28,
+                "msg": "[NR switch] time = %f, nn_switch = %d",
+                "param_num": 2
+            },
+            {
+                "id": 29,
+                "msg": "ltnr_snr_state_cnt = %d",
+                "param_num": 1
+            },
+            {
+                "id": 30,
+                "msg": "ltnr_vad_credit = %d",
+                "param_num": 1
+            },
+            {
+                "id": 31,
+                "msg": "Post fix_fft CYCLES CNT %d INSTC CNT %d",
+                "param_num": 2
+            },
+            {
+                "id": 32,
+                "msg": "DMNR FUNC CYCLES CNT %d INSTC CNT %d",
+                "param_num": 2
+            },
+            {
+                "id": 33,
+                "msg": "\\n\\n---------------------- size 256 IFFT --------------------------",
+                "param_num": 0
+            },
+            {
+                "id": 34,
+                "msg": "\\n",
+                "param_num": 0
+            },
+            {
+                "id": 35,
+                "msg": "sum_32 = %d",
+                "param_num": 1
+            },
+            {
+                "id": 36,
+                "msg": "sum = %f",
+                "param_num": 1
+            },
+            {
+                "id": 37,
+                "msg": "X = %f",
+                "param_num": 1
+            },
+            {
+                "id": 38,
+                "msg": "Y = %f",
+                "param_num": 1
+            },
+            {
+                "id": 39,
+                "msg": "W_f = %f",
+                "param_num": 1
+            },
+            {
+                "id": 40,
+                "msg": "W = %d",
+                "param_num": 1
+            },
+            {
+                "id": 41,
+                "msg": "=========================> MM2 %d  %d\\n",
+                "param_num": 2
+            },
+            {
+                "id": 42,
+                "msg": "=========================> ram_size = %d (st->e = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 43,
+                "msg": "=========================> ram_size = %d (st->x = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 44,
+                "msg": "=========================> ram_size = %d (st->input = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 45,
+                "msg": "=========================> ram_size = %d (st->y = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 46,
+                "msg": "=========================> ram_size = %d (st->last_y = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 47,
+                "msg": "=========================> ram_size = %d (st->Yf = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 48,
+                "msg": "=========================> ram_size = %d (st->Rf = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 49,
+                "msg": "=========================> ram_size = %d (st->Xf = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 50,
+                "msg": "=========================> ram_size = %d (st->Yh = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 51,
+                "msg": "=========================> ram_size = %d (st->Eh = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 52,
+                "msg": "=========================> ram_size = %d (st->X = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 53,
+                "msg": "=========================> ram_size = %d (st->Y = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 54,
+                "msg": "=========================> ram_size = %d (st->E = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 55,
+                "msg": "=========================> ram_size = %d (st->W = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 56,
+                "msg": "=========================> ram_size = %d (st->foreground = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 57,
+                "msg": "=========================> ram_size = %d (st->PHI = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 58,
+                "msg": "=========================> ram_size = %d (st->power = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 59,
+                "msg": "=========================> ram_size = %d (st->power_1 = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 60,
+                "msg": "=========================> ram_size = %d (st->window = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 61,
+                "msg": "=========================> ram_size = %d (st->prop = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 62,
+                "msg": "=========================> ram_size = %d (st->wtmp = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 63,
+                "msg": "=========================> ram_size = %d (st->memX = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 64,
+                "msg": "=========================> ram_size = %d (st->memD = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 65,
+                "msg": "=========================> ram_size = %d (st->memE = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 66,
+                "msg": "=========================> ram_size = %d (st->notch_mem = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 67,
+                "msg": "=========================> ram_size = %d (st->fft_table->trigcache = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 68,
+                "msg": "=========================> ram_size = %d (st->fft_table->splitcache = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 69,
+                "msg": "=========================> ram_size = %d (st->Davg1 = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 70,
+                "msg": "=========================> ram_size = %d (st->Davg2 = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 71,
+                "msg": "=========================> ram_size = %d (st->Dvar1 = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 72,
+                "msg": "=========================> ram_size = %d (st->Dvar2 = %d)\\n",
+                "param_num": 2
+            },
+            {
+                "id": 73,
+                "msg": "Sxx_64 = %f\\t%d",
+                "param_num": 2
+            },
+            {
+                "id": 74,
+                "msg": "Sff_64 = %f\\t%d",
+                "param_num": 2
+            },
+            {
+                "id": 75,
+                "msg": "st->PHI_32 = %d",
+                "param_num": 1
+            },
+            {
+                "id": 76,
+                "msg": "%03d\\tst->y = %f\\t%d",
+                "param_num": 3
+            },
+            {
+                "id": 77,
+                "msg": " st->y = %f\\t%f\\t%f",
+                "param_num": 3
+            },
+            {
+                "id": 78,
+                "msg": "The echo canceller started acting funny and got slapped (reset). It swears it will behave now.",
+                "param_num": 0
+            },
+            {
+                "id": 79,
+                "msg": "Xf_32 = %d\\t%d",
+                "param_num": 2
+            },
+            {
+                "id": 80,
+                "msg": "voice_gate_target is %d",
+                "param_num": 1
+            },
+            {
+                "id": 81,
+                "msg": "status = %d\\t%d\\t%d\\t%d\\t%d\\n",
+                "param_num": 5
+            },
+            {
+                "id": 82,
+                "msg": "status111 =%d\\t%d\\t%d\\t%d\\t%d\\n",
+                "param_num": 5
+            },
+            {
+                "id": 83,
+                "msg": "DC= %d",
+                "param_num": 1
+            },
+            {
+                "id": 84,
+                "msg": "time  %d sec  bulk_dly  %d",
+                "param_num": 2
+            },
+            {
+                "id": 85,
+                "msg": "%d\\t%f\\t%f\\t%f\\t%f\\n",
+                "param_num": 5
+            },
+            {
+                "id": 86,
+                "msg": "%f\\t%f\\t%f\\n",
+                "param_num": 3
+            },
+            {
+                "id": 87,
+                "msg": "=======> %d\\n",
+                "param_num": 1
+            },
+            {
+                "id": 88,
+                "msg": "scale_fix =  %d\\t%d\\t%d\\n",
+                "param_num": 3
+            },
+            {
+                "id": 89,
+                "msg": "gain=%d\\t%d",
+                "param_num": 2
+            },
+            {
+                "id": 90,
+                "msg": "time = %f, ltnr_od_high_freq_en = %d, less_lv500_cnt = %d, less_lv1000_cnt = %d, less_lv1500_cnt = %d, less_lv2000_cnt = %d",
+                "param_num": 6
+            },
+            {
+                "id": 91,
+                "msg": "[ffpu wdrc] init OK!",
+                "param_num": 0
+            },
+            {
+                "id": 92,
+                "msg": "[wdrc] init OK!",
+                "param_num": 0
+            },
+            {
+                "id": 93,
+                "msg": "%dHz = %fdB, fft_in[%d] = %d, fft_in[%d] = %d",
+                "param_num": 6
+            },
+            {
+                "id": 94,
+                "msg": "%fHz = %fdB, fft_in[%d] = %d, fft_in[%d] = %d",
+                "param_num": 6
+            },
+            {
+                "id": 95,
+                "msg": "time=%f, max_frame_rms = %lld, avg_frame_rms = %lld, wdrc_sb_struct->envelope = %lld",
+                "param_num": 4
+            },
+            {
+                "id": 96,
+                "msg": "band_start_point = %d, band_end_point = %d, gain_m = %d",
+                "param_num": 3
+            },
+            {
+                "id": 97,
+                "msg": "[wdrc] band%d: time = %f, gain_m = %f\\n",
+                "param_num": 3
+            },
+            {
+                "id": 98,
+                "msg": "[wdrc] band%d: time = %f, gain_m = %d\\n",
+                "param_num": 3
+            },
+            {
+                "id": 99,
+                "msg": "=========================> MM2 %d\\n",
+                "param_num": 1
+            },
+            {
+                "id": 100,
+                "msg": "=========================> MM1\\n",
+                "param_num": 0
+            },
+            {
+                "id": 101,
+                "msg": "speex_static_mem_pool not init mallocFromPool",
+                "param_num": 0
+            },
+            {
+                "id": 102,
+                "msg": "speex_static_mem_pool not init MemoryPoolRecycleAll",
+                "param_num": 0
+            },
+            {
+                "id": 103,
+                "msg": "TNR going",
+                "param_num": 0
+            },
+            {
+                "id": 104,
+                "msg": "\u4e0a\u4e00\u500b",
+                "param_num": 0
+            },
+            {
+                "id": 105,
+                "msg": "\u4e0b\u4e00\u500b",
+                "param_num": 0
+            },
+            {
+                "id": 106,
+                "msg": "\u5c0f\u756b\u5bb6",
+                "param_num": 0
+            },
+            {
+                "id": 107,
+                "msg": "\u56de\u524d\u9801",
+                "param_num": 0
+            },
+            {
+                "id": 108,
+                "msg": "\u5f8c\u4e00\u9801",
+                "param_num": 0
+            },
+            {
+                "id": 109,
+                "msg": "\u5f80\u53f3\u908a",
+                "param_num": 0
+            },
+            {
+                "id": 110,
+                "msg": "\u5f80\u5de6\u908a",
+                "param_num": 0
+            },
+            {
+                "id": 111,
+                "msg": "\u8a08\u7b97\u6a5f",
+                "param_num": 0
+            },
+            {
+                "id": 112,
+                "msg": "\u9304\u97f3\u6a5f",
+                "param_num": 0
+            },
+            {
+                "id": 113,
+                "msg": "NULL",
+                "param_num": 0
+            },
+            {
+                "id": 114,
+                "msg": "NOT DEFINED",
+                "param_num": 0
+            },
+            {
+                "id": 115,
+                "msg": "\u958b\u59cb\u62cd\u7167",
+                "param_num": 0
+            },
+            {
+                "id": 116,
+                "msg": "\u958b\u59cb\u9304\u50cf",
+                "param_num": 0
+            },
+            {
+                "id": 117,
+                "msg": "\u7d50\u675f\u9304\u50cf",
+                "param_num": 0
+            },
+            {
+                "id": 118,
+                "msg": "\u958b\u59cb\u9304\u97f3",
+                "param_num": 0
+            },
+            {
+                "id": 119,
+                "msg": "\u7d50\u675f\u9304\u97f3",
+                "param_num": 0
+            },
+            {
+                "id": 120,
+                "msg": "\u91cd\u9ede\u6a19\u8a18",
+                "param_num": 0
+            },
+            {
+                "id": 121,
+                "msg": "\u958b\u59cb\u57f7\u6cd5",
+                "param_num": 0
+            },
+            {
+                "id": 122,
+                "msg": "\u7d50\u675f\u57f7\u6cd5",
+                "param_num": 0
+            },
+            {
+                "id": 123,
+                "msg": "\u958b\u59cb\u57f7\u52e4",
+                "param_num": 0
+            },
+            {
+                "id": 124,
+                "msg": "\u7d50\u675f\u57f7\u52e4",
+                "param_num": 0
+            },
+            {
+                "id": 125,
+                "msg": "\u98a8\u6247\u95dc\u9589",
+                "param_num": 0
+            },
+            {
+                "id": 126,
+                "msg": "\u98a8\u901f\u5f37",
+                "param_num": 0
+            },
+            {
+                "id": 127,
+                "msg": "\u98a8\u901f\u4e2d",
+                "param_num": 0
+            },
+            {
+                "id": 128,
+                "msg": "\u98a8\u901f\u5f31",
+                "param_num": 0
+            },
+            {
+                "id": 129,
+                "msg": "\u96fb\u71c8\u5ef6\u9072",
+                "param_num": 0
+            },
+            {
+                "id": 130,
+                "msg": "\u96fb\u71c8\u958b\u95dc",
+                "param_num": 0
+            },
+            {
+                "id": 131,
+                "msg": "turn on",
+                "param_num": 0
+            },
+            {
+                "id": 132,
+                "msg": "turn off",
+                "param_num": 0
+            },
+            {
+                "id": 133,
+                "msg": "reset",
+                "param_num": 0
+            },
+            {
+                "id": 134,
+                "msg": "clear CMOS",
+                "param_num": 0
+            },
+            {
+                "id": 135,
+                "msg": "AURA switch",
+                "param_num": 0
+            },
+            {
+                "id": 136,
+                "msg": "AURA on",
+                "param_num": 0
+            },
+            {
+                "id": 137,
+                "msg": "AURA off",
+                "param_num": 0
+            },
+            {
+                "id": 138,
+                "msg": "enter",
+                "param_num": 0
+            },
+            {
+                "id": 139,
+                "msg": "shut down",
+                "param_num": 0
+            },
+            {
+                "id": 140,
+                "msg": "power on",
+                "param_num": 0
+            },
+            {
+                "id": 141,
+                "msg": "volume up",
+                "param_num": 0
+            },
+            {
+                "id": 142,
+                "msg": "open menu",
+                "param_num": 0
+            },
+            {
+                "id": 143,
+                "msg": "open youtube",
+                "param_num": 0
+            },
+            {
+                "id": 144,
+                "msg": "go left",
+                "param_num": 0
+            },
+            {
+                "id": 145,
+                "msg": "go right",
+                "param_num": 0
+            },
+            {
+                "id": 146,
+                "msg": "power off",
+                "param_num": 0
+            },
+            {
+                "id": 147,
+                "msg": "mute",
+                "param_num": 0
+            },
+            {
+                "id": 148,
+                "msg": "volume down",
+                "param_num": 0
+            },
+            {
+                "id": 149,
+                "msg": "\u6253\u958b\u5ba2\u5ef3\u71c8",
+                "param_num": 0
+            },
+            {
+                "id": 150,
+                "msg": "\u95dc\u9589\u5ba2\u5ef3\u71c8",
+                "param_num": 0
+            },
+            {
+                "id": 151,
+                "msg": "\u6253\u958b\u7384\u95dc\u71c8",
+                "param_num": 0
+            },
+            {
+                "id": 152,
+                "msg": "\u95dc\u9589\u7384\u95dc\u71c8",
+                "param_num": 0
+            },
+            {
+                "id": 153,
+                "msg": "return channel",
+                "param_num": 0
+            },
+            {
+                "id": 154,
+                "msg": "pause program",
+                "param_num": 0
+            },
+            {
+                "id": 155,
+                "msg": "stop program",
+                "param_num": 0
+            },
+            {
+                "id": 156,
+                "msg": "play program",
+                "param_num": 0
+            },
+            {
+                "id": 157,
+                "msg": "next channel",
+                "param_num": 0
+            },
+            {
+                "id": 158,
+                "msg": "previous channel",
+                "param_num": 0
+            },
+            {
+                "id": 159,
+                "msg": "return",
+                "param_num": 0
+            },
+            {
+                "id": 160,
+                "msg": "unmute",
+                "param_num": 0
+            },
+            {
+                "id": 161,
+                "msg": "[ERROR]: MAXSTATENUM in staticdef.h should set to %d\\n",
+                "param_num": 1
+            },
+            {
+                "id": 162,
+                "msg": "PastPhoneSeq = ",
+                "param_num": 0
+            },
+            {
+                "id": 163,
+                "msg": "%d ",
+                "param_num": 1
+            },
+            {
+                "id": 164,
+                "msg": "[Error]: arc.nextState > IgoFstPtr->stateNum ?!\\n",
+                "param_num": 0
+            },
+            {
+                "id": 165,
+                "msg": "[ERROR]: going to delete non-existing key=%d in curTokensHT\\n",
+                "param_num": 1
+            },
+            {
+                "id": 166,
+                "msg": "[ERROR]: Haven't checked that the statck is not full? Try to add elt into a full heap??\\n",
+                "param_num": 0
+            },
+            {
+                "id": 167,
+                "msg": "[ERROR]: stack full\\n",
+                "param_num": 0
+            },
+            {
+                "id": 168,
+                "msg": "[ERROR]: state!=tok->arc.nextState(%d)\\n",
+                "param_num": 1
+            },
+            {
+                "id": 169,
+                "msg": "[ERROR]: In Bg, eps should not change frame index?? FIXTOKENSIZEBG must be 1\\n",
+                "param_num": 0
+            },
+            {
+                "id": 170,
+                "msg": "[ERROR]: already has key in hash tabel\\n",
+                "param_num": 0
+            },
+            {
+                "id": 171,
+                "msg": "[ERROR]: In Bg, FIXTOKENSIZEBG must be 1. So sameStateIdx=1, here sameStateIdx=%d\\n",
+                "param_num": 1
+            },
+            {
+                "id": 172,
+                "msg": "[ERROR]: State in curTokensHT but cannot find in fixCostHeap??\\n",
+                "param_num": 0
+            },
+            {
+                "id": 173,
+                "msg": "[ERROR]: bestTokPtrInPrevHT = NULL in processEmitting ??\\n",
+                "param_num": 0
+            },
+            {
+                "id": 174,
+                "msg": "[ERROR]: dictionary error, state!=tok->arc.nextState\\n",
+                "param_num": 0
+            },
+            {
+                "id": 175,
+                "msg": "Emitting NumFramesDecoded=%d\\t\\n",
+                "param_num": 1
+            },
+            {
+                "id": 176,
+                "msg": "[ERROR]: init first token error\\n",
+                "param_num": 0
+            },
+            {
+                "id": 177,
+                "msg": "[ERROR]: Cannot open file %s\\n",
+                "param_num": 1
+            },
+            {
+                "id": 178,
+                "msg": "===== Reading binary igoFst\\n",
+                "param_num": 0
+            },
+            {
+                "id": 179,
+                "msg": "File size = %d bytes\\n",
+                "param_num": 1
+            },
+            {
+                "id": 180,
+                "msg": "stateNum=%d; arcNum=%d, finalStateNum=%d\\n",
+                "param_num": 3
+            },
+            {
+                "id": 181,
+                "msg": "[ERROR]: igoFST binary format error\\n",
+                "param_num": 0
+            },
+            {
+                "id": 182,
+                "msg": "%s %d sizeof(igoFst_STATE) %zu\\n",
+                "param_num": 3
+            },
+            {
+                "id": 183,
+                "msg": "%s %d sizeof(igoFst_ARC) %zu\\n",
+                "param_num": 3
+            },
+            {
+                "id": 184,
+                "msg": "%s %d ERROR MAXSTATE_CNT != stateNum\\n",
+                "param_num": 2
+            },
+            {
+                "id": 185,
+                "msg": "%s %d ERROR MAXSTATE_ARC_CNT != arcNum %d %d\\n",
+                "param_num": 4
+            },
+            {
+                "id": 186,
+                "msg": "%s %d sizeof(igoFstBg_STATE) %zu\\n",
+                "param_num": 3
+            },
+            {
+                "id": 187,
+                "msg": "%s %d sizeof(igoFBg_ARC) %zu\\n",
+                "param_num": 3
+            },
+            {
+                "id": 188,
+                "msg": "%s %d ERROR MAXSTATEBG_CNT != stateNum\\n",
+                "param_num": 2
+            },
+            {
+                "id": 189,
+                "msg": "%s %d ERROR MAXSTATEBG_ARC_CNT != arcNum %d %d\\n",
+                "param_num": 4
+            },
+            {
+                "id": 190,
+                "msg": "[ERROR]: state is larger than stateNum\\n",
+                "param_num": 0
+            },
+            {
+                "id": 191,
+                "msg": "[ERROR]: prev->nextIdx=%d??\\n",
+                "param_num": 1
+            },
+            {
+                "id": 192,
+                "msg": "[ERROR]: memMallocOneHashElt HASHELT fail\\n",
+                "param_num": 0
+            },
+            {
+                "id": 193,
+                "msg": "do nothing, cause already have key=%d in hash table\\n",
+                "param_num": 1
+            },
+            {
+                "id": 194,
+                "msg": "Hash Value:%d; Key=%d; Value->cost=%d\\n",
+                "param_num": 3
+            },
+            {
+                "id": 195,
+                "msg": "Key=%d; Value->x=%d\\n",
+                "param_num": 2
+            },
+            {
+                "id": 196,
+                "msg": "[WARNING]: MEM Buffer Full\\n",
+                "param_num": 0
+            },
+            {
+                "id": 197,
+                "msg": "[ERROR]: Shouldnt come to this line\\n",
+                "param_num": 0
+            },
+            {
+                "id": 198,
+                "msg": "[WARNING]: Free a freed elt\\n",
+                "param_num": 0
+            },
+            {
+                "id": 199,
+                "msg": "struct IGOTOKEN *tok->pastCostSeq[1] %d",
+                "param_num": 1
+            },
+            {
+                "id": 200,
+                "msg": "struct HASHELT *hash->key %d",
+                "param_num": 1
+            },
+            {
+                "id": 201,
+                "msg": "overflow\\n",
+                "param_num": 0
+            },
+            {
+                "id": 202,
+                "msg": "underflow\\n",
+                "param_num": 0
+            },
+            {
+                "id": 203,
+                "msg": "[ERROR]: readIdTable opening file %s\\n",
+                "param_num": 1
+            },
+            {
+                "id": 204,
+                "msg": "GOYA_MODEL_VERSION:okgoogle_191216",
+                "param_num": 0
+            },
+            {
+                "id": 205,
+                "msg": "GOYA_MODEL_VERSION:ALEXA_V1C1_20200326",
+                "param_num": 0
+            },
+            {
+                "id": 206,
+                "msg": "GOYA_MODEL_VERSION:OKGOOGLE_V1B1_200529",
+                "param_num": 0
+            },
+            {
+                "id": 207,
+                "msg": "GOYA_MODEL_VERSION:OKGOOGLE_V1B1_200701",
+                "param_num": 0
+            },
+            {
+                "id": 208,
+                "msg": "GOYA_MODEL_VERSION:HIELLA_V1B1_20210120",
+                "param_num": 0
+            },
+            {
+                "id": 209,
+                "msg": "GOYA_MODEL_VERSION:HIELLA_V1B1_20210403",
+                "param_num": 0
+            },
+            {
+                "id": 210,
+                "msg": "GOYA_MODEL_VERSION:HIFOLAX_V1B1_220105",
+                "param_num": 0
+            },
+            {
+                "id": 211,
+                "msg": "GOYA_MODEL_VERSION:HIFOLAX_V1B1_220114",
+                "param_num": 0
+            },
+            {
+                "id": 212,
+                "msg": "GOYA_MODEL_VERSION:HIFOLAX_V1B1_220221",
+                "param_num": 0
+            },
+            {
+                "id": 213,
+                "msg": "IGO ECNS: Null input pointer. Skip processing.",
+                "param_num": 0
+            },
+            {
+                "id": 214,
+                "msg": "IGO ECNS: IGO supports 16k sample rate for now",
+                "param_num": 0
+            },
+            {
+                "id": 215,
+                "msg": "IGO ECNS: Mute now...",
+                "param_num": 0
+            },
+            {
+                "id": 216,
+                "msg": "GOYA init %d %d",
+                "param_num": 2
+            },
+            {
+                "id": 217,
+                "msg": "[BitTrue] goya_frame_cnt:%d score:%d kw:%d",
+                "param_num": 3
+            },
+            {
+                "id": 218,
+                "msg": "Stage1 Hit(%d) score:%d",
+                "param_num": 2
+            },
+            {
+                "id": 219,
+                "msg": "%d UNHIT",
+                "param_num": 1
+            },
+            {
+                "id": 220,
+                "msg": "%d HIT",
+                "param_num": 1
+            },
+            {
+                "id": 221,
+                "msg": "\\n[WARN] bf_comp.bin not found",
+                "param_num": 0
+            },
+            {
+                "id": 222,
+                "msg": "\\nbf_comp tbl ready",
+                "param_num": 0
+            },
+            {
+                "id": 223,
+                "msg": "goal_codec_gain or d-mic gain should add %d\\n",
+                "param_num": 1
+            },
+            {
+                "id": 224,
+                "msg": "goal_agc_gain should add %d\\n",
+                "param_num": 1
+            },
+            {
+                "id": 225,
+                "msg": "goal_tx_gain is %d\\n",
+                "param_num": 1
+            },
+            {
+                "id": 226,
+                "msg": "waitting more data\\n",
+                "param_num": 0
+            },
+            {
+                "id": 227,
+                "msg": "Estimate VAD thr\\n",
+                "param_num": 0
+            },
+            {
+                "id": 228,
+                "msg": "agc check pass\\n",
+                "param_num": 0
+            },
+            {
+                "id": 229,
+                "msg": "Run agc_check\\n",
+                "param_num": 0
+            },
+            {
+                "id": 230,
+                "msg": "tx check pass\\n",
+                "param_num": 0
+            },
+            {
+                "id": 231,
+                "msg": "Run tx_check\\n",
+                "param_num": 0
+            },
+            {
+                "id": 232,
+                "msg": "BF COMP TBL DUMP",
+                "param_num": 0
+            },
+            {
+                "id": 233,
+                "msg": "Degas reset @ frame %d",
+                "param_num": 1
+            },
+            {
+                "id": 234,
+                "msg": "[ERROR]: read fst error\\n",
+                "param_num": 0
+            },
+            {
+                "id": 235,
+                "msg": "[ERROR]: id2pdfid_num (%d) should be IDNUM, id2pdfid data seems incorrect\\n",
+                "param_num": 1
+            },
+            {
+                "id": 236,
+                "msg": "[ERROR]: id2phoneid_num (%d) should be IDNUM, id2phoneid data seems incorrect\\n",
+                "param_num": 1
+            },
+            {
+                "id": 237,
+                "msg": "init_DEGAS",
+                "param_num": 0
+            },
+            {
+                "id": 238,
+                "msg": "CS : g_degas_wav_buf %d",
+                "param_num": 1
+            },
+            {
+                "id": 239,
+                "msg": "CS : g_degas_frame_cnt %d FE %d",
+                "param_num": 2
+            },
+            {
+                "id": 240,
+                "msg": "CS : g_degas_frame_cnt %d AM0_1 sum %d",
+                "param_num": 2
+            },
+            {
+                "id": 241,
+                "msg": "CS : g_degas_frame_cnt %d AM1_1 sum %d",
+                "param_num": 2
+            },
+            {
+                "id": 242,
+                "msg": "CS : g_degas_frame_cnt %d AM2_1 sum %d",
+                "param_num": 2
+            },
+            {
+                "id": 243,
+                "msg": "CS : g_degas_frame_cnt %d out %d",
+                "param_num": 2
+            },
+            {
+                "id": 244,
+                "msg": "Exit ASR MODE",
+                "param_num": 0
+            },
+            {
+                "id": 245,
+                "msg": "[BitTrue] Frame:%d score:%d",
+                "param_num": 2
+            },
+            {
+                "id": 246,
+                "msg": "[TUNE] Frame %d cmdIdx %d cmdScore %d cmdScoreBg %d startFrameIdx %d endFrameIdx %d ASR_TIME_OUT_FRAME %d DECODER_TIME_OUT_FRAME %d",
+                "param_num": 8
+            },
+            {
+                "id": 247,
+                "msg": "[HIT] Frame %d Score %d cmdIdx %d cmdScore %d cmdScoreBg %d startFrameIdx %d endFrameIdx %d thr %d min_frame_cnt %d max_frame_cnt %d",
+                "param_num": 10
+            },
+            {
+                "id": 248,
+                "msg": "CUSCMDID %d IGOCMDID %d",
+                "param_num": 2
+            },
+            {
+                "id": 249,
+                "msg": "Degas timeout init",
+                "param_num": 0
+            },
+            {
+                "id": 250,
+                "msg": "IGO KWS: IGO supports 16k sample rate for now",
+                "param_num": 0
+            },
+            {
+                "id": 251,
+                "msg": "IGO ECNS: Null input_ref. Skip processing.",
+                "param_num": 0
+            },
+            {
+                "id": 252,
+                "msg": "init_KWS",
+                "param_num": 0
+            },
+            {
+                "id": 253,
+                "msg": "DSP buf sz %d nn buf sz %d",
+                "param_num": 2
+            },
+            {
+                "id": 254,
+                "msg": "tango_init fail",
+                "param_num": 0
+            },
+            {
+                "id": 255,
+                "msg": "sizeof handle %d",
+                "param_num": 1
+            },
+            {
+                "id": 256,
+                "msg": "Shared gain = %d",
+                "param_num": 1
+            },
+            {
+                "id": 257,
+                "msg": "[BitTrue] sample [%d]",
+                "param_num": 1
+            },
+            {
+                "id": 258,
+                "msg": "[BitTrue] all_mfb[%d] = %d;",
+                "param_num": 2
+            },
+            {
+                "id": 259,
+                "msg": "[BitTrue] Hit %d score ds %d cs %d @ %d",
+                "param_num": 4
+            },
+            {
+                "id": 260,
+                "msg": "Tango EOS @ frame %d, CS = %d, DS = %d",
+                "param_num": 3
+            },
+            {
+                "id": 261,
+                "msg": "Tango Word Chain: %d",
+                "param_num": 1
+            },
+            {
+                "id": 262,
+                "msg": "Low SNR occured.",
+                "param_num": 0
+            },
+            {
+                "id": 263,
+                "msg": "Hit %d @ %d",
+                "param_num": 2
+            },
+            {
+                "id": 264,
+                "msg": "Hit %d score ds %d cs %d ",
+                "param_num": 3
+            },
+            {
+                "id": 265,
+                "msg": "IGO KWS: IGO supports 256 input samples temporarily",
+                "param_num": 0
+            },
+            {
+                "id": 266,
+                "msg": "IGO KWS: IGO supports 1 channel number temporarily",
+                "param_num": 0
+            },
+            {
+                "id": 267,
+                "msg": "%d[%d]: 0x%02X%02X%02X%02X",
+                "param_num": 6
+            },
+            {
+                "id": 268,
+                "msg": "init_ML_AEC",
+                "param_num": 0
+            },
+            {
+                "id": 269,
+                "msg": "ML_AEC_0 %d %d",
+                "param_num": 2
+            },
+            {
+                "id": 270,
+                "msg": "process_ML_AEC Error Not Support sec channel",
+                "param_num": 0
+            },
+            {
+                "id": 271,
+                "msg": "%d %d %d",
+                "param_num": 3
+            },
+            {
+                "id": 272,
+                "msg": "process_ML_AES 251 Notsupport Sec Channel",
+                "param_num": 0
+            },
+            {
+                "id": 273,
+                "msg": "MEM_SZ=%d",
+                "param_num": 1
+            },
+            {
+                "id": 274,
+                "msg": "AES en",
+                "param_num": 0
+            },
+            {
+                "id": 275,
+                "msg": "frame_cnt = %d, IFFT 48k complete",
+                "param_num": 1
+            },
+            {
+                "id": 276,
+                "msg": "Init RSV mode",
+                "param_num": 0
+            },
+            {
+                "id": 277,
+                "msg": "IGO ECNS: Null input. Skip processing.",
+                "param_num": 0
+            },
+            {
+                "id": 278,
+                "msg": "IGO ECNS: Null ref. Skip processing.",
+                "param_num": 0
+            },
+            {
+                "id": 279,
+                "msg": "IGO ECNS: skip",
+                "param_num": 0
+            },
+            {
+                "id": 280,
+                "msg": "cspotter_add_1_wrapper %d!",
+                "param_num": 1
+            },
+            {
+                "id": 281,
+                "msg": "score %d!",
+                "param_num": 1
+            },
+            {
+                "id": 282,
+                "msg": "output_buf:%d",
+                "param_num": 1
+            },
+            {
+                "id": 283,
+                "msg": "CSpotter_AddSample_1 fail ret %d",
+                "param_num": 1
+            },
+            {
+                "id": 284,
+                "msg": "CSpotter_AddSample_2 fail ret %d",
+                "param_num": 1
+            },
+            {
+                "id": 285,
+                "msg": "CSpotter_AddSample_3 fail ret %d",
+                "param_num": 1
+            },
+            {
+                "id": 286,
+                "msg": "CSpotter_GetResult %d (score: %d) at frame %d",
+                "param_num": 3
+            },
+            {
+                "id": 287,
+                "msg": "cspotter_init_wrapper",
+                "param_num": 0
+            },
+            {
+                "id": 288,
+                "msg": "CSpotter_GetMemoryUsage_SepWithExtRejModel_FromSPI: 0x%08x 0x%08x 0x%08x 0x%08x",
+                "param_num": 4
+            },
+            {
+                "id": 289,
+                "msg": "Memory usage for Rejection Model: %d",
+                "param_num": 1
+            },
+            {
+                "id": 290,
+                "msg": "Memory usage for Base Model: %d",
+                "param_num": 1
+            },
+            {
+                "id": 291,
+                "msg": "cspotter_init_2_wrapper",
+                "param_num": 0
+            },
+            {
+                "id": 292,
+                "msg": "CSpotter_Init_Sep_FromSPI_2 fail ret %d",
+                "param_num": 1
+            },
+            {
+                "id": 293,
+                "msg": "cspotter_init_3_wrapper",
+                "param_num": 0
+            },
+            {
+                "id": 294,
+                "msg": "CSpotter_Init_Sep_FromSPI_3 fail ret %d",
+                "param_num": 1
+            },
+            {
+                "id": 295,
+                "msg": "cspotter_init_4_wrapper",
+                "param_num": 0
+            },
+            {
+                "id": 296,
+                "msg": "CSpotter_Init_Sep_FromSPI_4 fail ret %d",
+                "param_num": 1
+            },
+            {
+                "id": 297,
+                "msg": "Host start cali",
+                "param_num": 0
+            },
+            {
+                "id": 298,
+                "msg": "Start count from device 0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 299,
+                "msg": "Start PRTC from device 0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 300,
+                "msg": " Stop count from device 0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 301,
+                "msg": " Device interval syscnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 302,
+                "msg": " Host   interval syscnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 303,
+                "msg": " Host   interval Time   %d us",
+                "param_num": 1
+            },
+            {
+                "id": 304,
+                "msg": "Device freq  %d KHz",
+                "param_num": 1
+            },
+            {
+                "id": 305,
+                "msg": "igo cmd timeout %d",
+                "param_num": 1
+            },
+            {
+                "id": 306,
+                "msg": "[ERROR] check extend debussy BootMsg",
+                "param_num": 0
+            },
+            {
+                "id": 307,
+                "msg": "[ERROR] check extend debussy connection",
+                "param_num": 0
+            },
+            {
+                "id": 308,
+                "msg": "ext debussy crc pass",
+                "param_num": 0
+            },
+            {
+                "id": 309,
+                "msg": "ext debussy crc fail",
+                "param_num": 0
+            },
+            {
+                "id": 310,
+                "msg": "ext debussy cali status pass",
+                "param_num": 0
+            },
+            {
+                "id": 311,
+                "msg": "ext debussy cali status fail",
+                "param_num": 0
+            },
+            {
+                "id": 312,
+                "msg": "FLASH CHIP",
+                "param_num": 0
+            },
+            {
+                "id": 313,
+                "msg": "PSRAM CHIP",
+                "param_num": 0
+            },
+            {
+                "id": 314,
+                "msg": "SEM0 get:%d",
+                "param_num": 1
+            },
+            {
+                "id": 315,
+                "msg": "SEM0 err get:%d",
+                "param_num": 1
+            },
+            {
+                "id": 316,
+                "msg": "SEM1 get:%d",
+                "param_num": 1
+            },
+            {
+                "id": 317,
+                "msg": "SEM0 err free:%d",
+                "param_num": 1
+            },
+            {
+                "id": 318,
+                "msg": "SEM0 free:%d",
+                "param_num": 1
+            },
+            {
+                "id": 319,
+                "msg": "SEM3 get:%d",
+                "param_num": 1
+            },
+            {
+                "id": 320,
+                "msg": "SEM3 get:0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 321,
+                "msg": "SEM5 get:%d",
+                "param_num": 1
+            },
+            {
+                "id": 322,
+                "msg": "SEM5 get:0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 323,
+                "msg": "SEM3 free:%d",
+                "param_num": 1
+            },
+            {
+                "id": 324,
+                "msg": "SEM3 free:0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 325,
+                "msg": "SEM15 get:%d",
+                "param_num": 1
+            },
+            {
+                "id": 326,
+                "msg": "SEM15 ger:0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 327,
+                "msg": "SEM11 get:%d",
+                "param_num": 1
+            },
+            {
+                "id": 328,
+                "msg": "SEM11 ger:0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 329,
+                "msg": "SEM15 err free:%d",
+                "param_num": 1
+            },
+            {
+                "id": 330,
+                "msg": "SEM15 err free:0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 331,
+                "msg": "SEM15 free:%d",
+                "param_num": 1
+            },
+            {
+                "id": 332,
+                "msg": "SEM15 free:0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 333,
+                "msg": "SEM11 err get:%d",
+                "param_num": 1
+            },
+            {
+                "id": 334,
+                "msg": "SEM11 err get:0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 335,
+                "msg": "SEM test staust:0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 336,
+                "msg": "SEM test success",
+                "param_num": 0
+            },
+            {
+                "id": 337,
+                "msg": "VAD set 0x%08x 0x%08x 0x%08x 0x%08x",
+                "param_num": 4
+            },
+            {
+                "id": 338,
+                "msg": "UMC_BUF_SIZE overrun %d",
+                "param_num": 1
+            },
+            {
+                "id": 339,
+                "msg": "linear CALLBACK NULL",
+                "param_num": 0
+            },
+            {
+                "id": 340,
+                "msg": "drv_hal_sys_cmd_fw_commit_id",
+                "param_num": 0
+            },
+            {
+                "id": 341,
+                "msg": "drv_hal_sys_cmd_fw_build_timestamp",
+                "param_num": 0
+            },
+            {
+                "id": 342,
+                "msg": "drv_hal_sys_cmd_igo_cmd_ver",
+                "param_num": 0
+            },
+            {
+                "id": 343,
+                "msg": "0x%08x 0x%08x 0x%08x 0x%08x",
+                "param_num": 4
+            },
+            {
+                "id": 344,
+                "msg": "DSP BAR init run",
+                "param_num": 0
+            },
+            {
+                "id": 345,
+                "msg": "GOYA_V1",
+                "param_num": 0
+            },
+            {
+                "id": 346,
+                "msg": "GOYA_V102",
+                "param_num": 0
+            },
+            {
+                "id": 347,
+                "msg": "GOYA_TH: %d",
+                "param_num": 1
+            },
+            {
+                "id": 348,
+                "msg": "audi_set_tx[0].vb_id: %d",
+                "param_num": 1
+            },
+            {
+                "id": 349,
+                "msg": "init_data_cntx failed!!",
+                "param_num": 0
+            },
+            {
+                "id": 350,
+                "msg": "AEC/AFC enable bulk dly runtime track",
+                "param_num": 0
+            },
+            {
+                "id": 351,
+                "msg": "check_ck timeout!!",
+                "param_num": 0
+            },
+            {
+                "id": 352,
+                "msg": "intf chk pass",
+                "param_num": 0
+            },
+            {
+                "id": 353,
+                "msg": "goya_buffer_chksum : 0x%8X",
+                "param_num": 1
+            },
+            {
+                "id": 354,
+                "msg": "Sidetone vb: %d ch: %d",
+                "param_num": 2
+            },
+            {
+                "id": 355,
+                "msg": "DMIC clock out from P23",
+                "param_num": 0
+            },
+            {
+                "id": 356,
+                "msg": "QCK CALI done",
+                "param_num": 0
+            },
+            {
+                "id": 357,
+                "msg": "[ERROR] QCK CALI Fail",
+                "param_num": 0
+            },
+            {
+                "id": 358,
+                "msg": "DSP config run",
+                "param_num": 0
+            },
+            {
+                "id": 359,
+                "msg": "DSP DBG BF CALI PROC run",
+                "param_num": 0
+            },
+            {
+                "id": 360,
+                "msg": "DSP DBG BULK DLY PROC run",
+                "param_num": 0
+            },
+            {
+                "id": 361,
+                "msg": "DSP DBG init run",
+                "param_num": 0
+            },
+            {
+                "id": 362,
+                "msg": "DSP DBG init 2 run",
+                "param_num": 0
+            },
+            {
+                "id": 363,
+                "msg": "DSP DBG MIC GAIN PROC run",
+                "param_num": 0
+            },
+            {
+                "id": 364,
+                "msg": "DSP DBG REC PROC run",
+                "param_num": 0
+            },
+            {
+                "id": 365,
+                "msg": "DSP DBG REC vb_id: %d",
+                "param_num": 1
+            },
+            {
+                "id": 366,
+                "msg": "DSP DBG: bypass src",
+                "param_num": 0
+            },
+            {
+                "id": 367,
+                "msg": "DSP DBG: Not support",
+                "param_num": 0
+            },
+            {
+                "id": 368,
+                "msg": "DSP DBG: tx pattern only",
+                "param_num": 0
+            },
+            {
+                "id": 369,
+                "msg": "DSP DBG: ramp en",
+                "param_num": 0
+            },
+            {
+                "id": 370,
+                "msg": "Overlap Buffer not enough",
+                "param_num": 0
+            },
+            {
+                "id": 371,
+                "msg": "degas hal_vad_cmd_meta.vad_int_pin:%d",
+                "param_num": 1
+            },
+            {
+                "id": 372,
+                "msg": "Reset To GOYA",
+                "param_num": 0
+            },
+            {
+                "id": 373,
+                "msg": "DSP DEGAS INIT0",
+                "param_num": 0
+            },
+            {
+                "id": 374,
+                "msg": "Version Check Error Current Version 0x%x BIN Version 0x%x",
+                "param_num": 2
+            },
+            {
+                "id": 375,
+                "msg": "Create Debug VB:%d",
+                "param_num": 1
+            },
+            {
+                "id": 376,
+                "msg": "DSP DEGAS INIT1",
+                "param_num": 0
+            },
+            {
+                "id": 377,
+                "msg": "DSP DEGAS INIT2",
+                "param_num": 0
+            },
+            {
+                "id": 378,
+                "msg": "DSP DEGAS INIT3",
+                "param_num": 0
+            },
+            {
+                "id": 379,
+                "msg": "psram erase",
+                "param_num": 0
+            },
+            {
+                "id": 380,
+                "msg": "ext boot cfg is wrong!",
+                "param_num": 0
+            },
+            {
+                "id": 381,
+                "msg": "dsp ext dl process",
+                "param_num": 0
+            },
+            {
+                "id": 382,
+                "msg": "fw bin size 0x%08x",
+                "param_num": 1
+            },
+            {
+                "id": 383,
+                "msg": "psram download start",
+                "param_num": 0
+            },
+            {
+                "id": 384,
+                "msg": "dsp ext dl retry cnt down %d",
+                "param_num": 1
+            },
+            {
+                "id": 385,
+                "msg": "dsp ext cali retry cnt down %d",
+                "param_num": 1
+            },
+            {
+                "id": 386,
+                "msg": "dsp ext wr boot cfg",
+                "param_num": 0
+            },
+            {
+                "id": 387,
+                "msg": "dsp ext dl finish",
+                "param_num": 0
+            },
+            {
+                "id": 388,
+                "msg": "dsp ext boot sucessful!",
+                "param_num": 0
+            },
+            {
+                "id": 389,
+                "msg": "dsp ext dl fail  status %d",
+                "param_num": 1
+            },
+            {
+                "id": 390,
+                "msg": "cali not found -> dsp ext dl skip",
+                "param_num": 0
+            },
+            {
+                "id": 391,
+                "msg": "date code = 0x%x @ driver ver = 0x%x",
+                "param_num": 2
+            },
+            {
+                "id": 392,
+                "msg": "Platform int OK",
+                "param_num": 0
+            },
+            {
+                "id": 393,
+                "msg": "Platform int Fail",
+                "param_num": 0
+            },
+            {
+                "id": 394,
+                "msg": "DSP AEC_H_2 init run",
+                "param_num": 0
+            },
+            {
+                "id": 395,
+                "msg": "DSP CRNR init 2 run",
+                "param_num": 0
+            },
+            {
+                "id": 396,
+                "msg": "DSP LPNR init 2 run",
+                "param_num": 0
+            },
+            {
+                "id": 397,
+                "msg": "DSP MMNR init 2 run",
+                "param_num": 0
+            },
+            {
+                "id": 398,
+                "msg": "DSP NBNR init 2 run",
+                "param_num": 0
+            },
+            {
+                "id": 399,
+                "msg": "Note: INTF clk chk are skipped",
+                "param_num": 0
+            },
+            {
+                "id": 400,
+                "msg": "DSP PCMNR init 2 run",
+                "param_num": 0
+            },
+            {
+                "id": 401,
+                "msg": "DSP SPKNR init 2 run",
+                "param_num": 0
+            },
+            {
+                "id": 402,
+                "msg": "DSP WBNR init 2 run",
+                "param_num": 0
+            },
+            {
+                "id": 403,
+                "msg": "intf check_ck timeout!!",
+                "param_num": 0
+            },
+            {
+                "id": 404,
+                "msg": "DSP AEC_H_1 init run",
+                "param_num": 0
+            },
+            {
+                "id": 405,
+                "msg": "DSP CRNR init run",
+                "param_num": 0
+            },
+            {
+                "id": 406,
+                "msg": "DSP LPNR init run",
+                "param_num": 0
+            },
+            {
+                "id": 407,
+                "msg": "DSP MMNR init run",
+                "param_num": 0
+            },
+            {
+                "id": 408,
+                "msg": "DSP NBNR init run",
+                "param_num": 0
+            },
+            {
+                "id": 409,
+                "msg": "DSP PCMNR init run",
+                "param_num": 0
+            },
+            {
+                "id": 410,
+                "msg": "DSP SPKNR init run",
+                "param_num": 0
+            },
+            {
+                "id": 411,
+                "msg": "DSP WBNR init run",
+                "param_num": 0
+            },
+            {
+                "id": 412,
+                "msg": "DSP LPVAD init run",
+                "param_num": 0
+            },
+            {
+                "id": 413,
+                "msg": "audi @0x%08x",
+                "param_num": 1
+            },
+            {
+                "id": 414,
+                "msg": "DSP LPVAD init_2 run",
+                "param_num": 0
+            },
+            {
+                "id": 415,
+                "msg": "Process igo meta init ",
+                "param_num": 0
+            },
+            {
+                "id": 416,
+                "msg": "DSP NR init run",
+                "param_num": 0
+            },
+            {
+                "id": 417,
+                "msg": "Trigger!! %d",
+                "param_num": 1
+            },
+            {
+                "id": 418,
+                "msg": "DSP VAD init run",
+                "param_num": 0
+            },
+            {
+                "id": 419,
+                "msg": "Enable SVAD only",
+                "param_num": 0
+            },
+            {
+                "id": 420,
+                "msg": "Enable SAMPLE CHECK",
+                "param_num": 0
+            },
+            {
+                "id": 421,
+                "msg": "NPU IIR run",
+                "param_num": 0
+            },
+            {
+                "id": 422,
+                "msg": "Freq= %06d @ R= %02d @ FT= %02d @ Div= %d",
+                "param_num": 4
+            },
+            {
+                "id": 423,
+                "msg": "[ERROR] SYS Cali Failure",
+                "param_num": 0
+            },
+            {
+                "id": 424,
+                "msg": "NPU ENC run",
+                "param_num": 0
+            },
+            {
+                "id": 425,
+                "msg": "NPU DBG AUDIO out",
+                "param_num": 0
+            },
+            {
+                "id": 426,
+                "msg": "NPU DBG TX PATTERN: %d [1:ramp 2:prbs 3:cust]",
+                "param_num": 1
+            },
+            {
+                "id": 427,
+                "msg": "NPU DBG BF_CALI",
+                "param_num": 0
+            },
+            {
+                "id": 428,
+                "msg": "out of batch command limitation num(%d)/max(%d)",
+                "param_num": 2
+            },
+            {
+                "id": 429,
+                "msg": "Dispatch",
+                "param_num": 0
+            },
+            {
+                "id": 430,
+                "msg": "Nope",
+                "param_num": 0
+            },
+            {
+                "id": 431,
+                "msg": "TMU init OK",
+                "param_num": 0
+            },
+            {
+                "id": 432,
+                "msg": "BONDINGID %d != %d or 5 use incorrect bin file",
+                "param_num": 2
+            },
+            {
+                "id": 433,
+                "msg": "BOOT_MSG %X",
+                "param_num": 1
+            },
+            {
+                "id": 434,
+                "msg": "Not do clock calibration",
+                "param_num": 0
+            },
+            {
+                "id": 435,
+                "msg": "TMU_RSV_PMB_FADDR_ID %d",
+                "param_num": 1
+            },
+            {
+                "id": 436,
+                "msg": "Not Support OP Mode %d size = 0",
+                "param_num": 1
+            },
+            {
+                "id": 437,
+                "msg": "BONDINGID %d Not support AIBF",
+                "param_num": 1
+            },
+            {
+                "id": 438,
+                "msg": "TMU AEC_H init",
+                "param_num": 0
+            },
+            {
+                "id": 439,
+                "msg": "NPU AEC_H parse",
+                "param_num": 0
+            },
+            {
+                "id": 440,
+                "msg": "TMU BAR init",
+                "param_num": 0
+            },
+            {
+                "id": 441,
+                "msg": "NPU BAR parse",
+                "param_num": 0
+            },
+            {
+                "id": 442,
+                "msg": "audio bypass src is_dmic:%d ela_edge:%d",
+                "param_num": 2
+            },
+            {
+                "id": 443,
+                "msg": "audio_dbg_aec_stereo vbid:%d stereo(%d)",
+                "param_num": 2
+            },
+            {
+                "id": 444,
+                "msg": "audio_bypass init",
+                "param_num": 0
+            },
+            {
+                "id": 445,
+                "msg": "TMU BYPASS init",
+                "param_num": 0
+            },
+            {
+                "id": 446,
+                "msg": "NPU BYPASS parse",
+                "param_num": 0
+            },
+            {
+                "id": 447,
+                "msg": "TMU CRNR init",
+                "param_num": 0
+            },
+            {
+                "id": 448,
+                "msg": "NPU CRNR parse",
+                "param_num": 0
+            },
+            {
+                "id": 449,
+                "msg": "[DBG] NOT the same @ count = %d",
+                "param_num": 1
+            },
+            {
+                "id": 450,
+                "msg": "TMU DBG init",
+                "param_num": 0
+            },
+            {
+                "id": 451,
+                "msg": "NPU DBG parse",
+                "param_num": 0
+            },
+            {
+                "id": 452,
+                "msg": "Start Degas",
+                "param_num": 0
+            },
+            {
+                "id": 453,
+                "msg": "TMU DEGAS init",
+                "param_num": 0
+            },
+            {
+                "id": 454,
+                "msg": "NPU DEGAS parse",
+                "param_num": 0
+            },
+            {
+                "id": 455,
+                "msg": "ELA %d",
+                "param_num": 1
+            },
+            {
+                "id": 456,
+                "msg": "Enter HWVAD",
+                "param_num": 0
+            },
+            {
+                "id": 457,
+                "msg": "silence %d",
+                "param_num": 1
+            },
+            {
+                "id": 458,
+                "msg": "Exit HWVAD",
+                "param_num": 0
+            },
+            {
+                "id": 459,
+                "msg": "TMU LP_VAD init",
+                "param_num": 0
+            },
+            {
+                "id": 460,
+                "msg": "NPU LP_VAD parse",
+                "param_num": 0
+            },
+            {
+                "id": 461,
+                "msg": "TMU LPNR init",
+                "param_num": 0
+            },
+            {
+                "id": 462,
+                "msg": "NPU LPNR parse",
+                "param_num": 0
+            },
+            {
+                "id": 463,
+                "msg": "TMU MMNR init",
+                "param_num": 0
+            },
+            {
+                "id": 464,
+                "msg": "NPU MMNR parse",
+                "param_num": 0
+            },
+            {
+                "id": 465,
+                "msg": "TMU NBNR init",
+                "param_num": 0
+            },
+            {
+                "id": 466,
+                "msg": "NPU NBNR parse",
+                "param_num": 0
+            },
+            {
+                "id": 467,
+                "msg": "TMU NR init",
+                "param_num": 0
+            },
+            {
+                "id": 468,
+                "msg": "NPU NR parse",
+                "param_num": 0
+            },
+            {
+                "id": 469,
+                "msg": "TMU PCMNR init",
+                "param_num": 0
+            },
+            {
+                "id": 470,
+                "msg": "NPU PCMNR parse",
+                "param_num": 0
+            },
+            {
+                "id": 471,
+                "msg": "TMU SPKNR init",
+                "param_num": 0
+            },
+            {
+                "id": 472,
+                "msg": "NPU SPKNR parse",
+                "param_num": 0
+            },
+            {
+                "id": 473,
+                "msg": "TMU WBNR init",
+                "param_num": 0
+            },
+            {
+                "id": 474,
+                "msg": "NPU WBNR parse",
+                "param_num": 0
+            },
+            {
+                "id": 475,
+                "msg": "memcpy: %d",
+                "param_num": 1
+            },
+            {
+                "id": 476,
+                "msg": "conv: %d",
+                "param_num": 1
+            },
+            {
+                "id": 477,
+                "msg": "[CODEC] device_id:[0x%x] cmd_num:[%d] fmt idx_len:[%d]  data_len:[%d]",
+                "param_num": 4
+            },
+            {
+                "id": 478,
+                "msg": "Boot cfg meta enable %d boot-cfg num %d sel %d gio_num %d",
+                "param_num": 4
+            },
+            {
+                "id": 479,
+                "msg": "Boot cfg not found",
+                "param_num": 0
+            },
+            {
+                "id": 480,
+                "msg": "load igo cmd",
+                "param_num": 0
+            },
+            {
+                "id": 481,
+                "msg": "init codec",
+                "param_num": 0
+            },
+            {
+                "id": 482,
+                "msg": "[ERROR]boot cfg chsum fail",
+                "param_num": 0
+            },
+            {
+                "id": 483,
+                "msg": "kws_hit_interrupt() hal_vad_cmd_meta.vad_int_mod:%d",
+                "param_num": 1
+            },
+            {
+                "id": 484,
+                "msg": "kws_hit_interrupt() hal_vad_cmd_meta.vad_int_pin:%d",
+                "param_num": 1
+            },
+            {
+                "id": 485,
+                "msg": "interrupt_check() kws_triggered:%d sys_cnt:%d kws_int_sys_cnt:%d KWS_INT_CNT:%d",
+                "param_num": 4
+            },
+            {
+                "id": 486,
+                "msg": "keyword triggerd!",
+                "param_num": 0
+            },
+            {
+                "id": 487,
+                "msg": "dmic cfg ela_edge (%d) dmic_dsr (%d) dmic_usr (%d)",
+                "param_num": 3
+            },
+            {
+                "id": 488,
+                "msg": "audi_i2s_config[%d] mclk(%d) bclk(%d)",
+                "param_num": 3
+            },
+            {
+                "id": 489,
+                "msg": "audi_dmic_m_config %d 0x%08x",
+                "param_num": 2
+            },
+            {
+                "id": 490,
+                "msg": "Warning for DMIC amptitude distortion",
+                "param_num": 0
+            },
+            {
+                "id": 491,
+                "msg": "audi_dmic_s_config %d 0x%08x TX gain %d",
+                "param_num": 3
+            },
+            {
+                "id": 492,
+                "msg": "audi_rx_channel_create [%d] vb:%d",
+                "param_num": 2
+            },
+            {
+                "id": 493,
+                "msg": "audi_rx_channel_create SWIIR cic_max:%d cic_r_shift:%d",
+                "param_num": 2
+            },
+            {
+                "id": 494,
+                "msg": "audi_tx_channel_create [%d] vb:%d",
+                "param_num": 2
+            },
+            {
+                "id": 495,
+                "msg": "chk_flash_crc fail",
+                "param_num": 0
+            },
+            {
+                "id": 496,
+                "msg": "chk_flash_crc pass",
+                "param_num": 0
+            },
+            {
+                "id": 497,
+                "msg": "Cali start ",
+                "param_num": 0
+            },
+            {
+                "id": 498,
+                "msg": "Cali Done",
+                "param_num": 0
+            },
+            {
+                "id": 499,
+                "msg": "Cali 0x%x Ft 0x%x",
+                "param_num": 2
+            },
+            {
+                "id": 500,
+                "msg": "Cycle cnt sys_cnt_2nd %d sys_cnt_1st %d diff %d ",
+                "param_num": 3
+            },
+            {
+                "id": 501,
+                "msg": "cali_interval %d target_sys_cnt %d",
+                "param_num": 2
+            },
+            {
+                "id": 502,
+                "msg": "Update MAX: %d",
+                "param_num": 1
+            },
+            {
+                "id": 503,
+                "msg": "Update MIN: %d",
+                "param_num": 1
+            },
+            {
+                "id": 504,
+                "msg": "HIF CALI",
+                "param_num": 0
+            },
+            {
+                "id": 505,
+                "msg": "24MHz Cali 0x%x Ft 0x%x",
+                "param_num": 2
+            },
+            {
+                "id": 506,
+                "msg": "26MHz Cali 0x%x Ft 0x%x",
+                "param_num": 2
+            },
+            {
+                "id": 507,
+                "msg": "140MHz Cali 0x%x Ft 0x%x",
+                "param_num": 2
+            },
+            {
+                "id": 508,
+                "msg": "160MHz Cali 0x%x Ft 0x%x",
+                "param_num": 2
+            },
+            {
+                "id": 509,
+                "msg": "208MHz Cali 0x%x Ft 0x%x",
+                "param_num": 2
+            },
+            {
+                "id": 510,
+                "msg": "234MHz Cali 0x%x Ft 0x%x",
+                "param_num": 2
+            },
+            {
+                "id": 511,
+                "msg": "dlk3s phase1 start",
+                "param_num": 0
+            },
+            {
+                "id": 512,
+                "msg": "Device stop count 0x%08x",
+                "param_num": 1
+            },
+            {
+                "id": 513,
+                "msg": "Get the device precise time:%d us",
+                "param_num": 1
+            },
+            {
+                "id": 514,
+                "msg": "Device sysck_diff=%d freq=%d KHz",
+                "param_num": 2
+            },
+            {
+                "id": 515,
+                "msg": "dlk3s phase2 start",
+                "param_num": 0
+            },
+            {
+                "id": 516,
+                "msg": "Find Freq=%d diff=%03d R=%02d FT=%02d",
+                "param_num": 4
+            },
+            {
+                "id": 517,
+                "msg": "lf_freq=0x%08x",
+                "param_num": 1
+            },
+            {
+                "id": 518,
+                "msg": "LFOSC cali NOT found all",
+                "param_num": 0
+            },
+            {
+                "id": 519,
+                "msg": "dlk3s phase2 end",
+                "param_num": 0
+            },
+            {
+                "id": 520,
+                "msg": "dlk3s phase3 start",
+                "param_num": 0
+            },
+            {
+                "id": 521,
+                "msg": "Delay 100us target cnt = %d",
+                "param_num": 1
+            },
+            {
+                "id": 522,
+                "msg": "Delay  50us target cnt = %d",
+                "param_num": 1
+            },
+            {
+                "id": 523,
+                "msg": "HFOSC cali NOT found all",
+                "param_num": 0
+            },
+            {
+                "id": 524,
+                "msg": "dlk3s phase3 end",
+                "param_num": 0
+            },
+            {
+                "id": 525,
+                "msg": "Find cali_R=%d value=%d\\n",
+                "param_num": 2
+            },
+            {
+                "id": 526,
+                "msg": "Find wrong cali ERROR! MIN - MAX = %d - %d KHz",
+                "param_num": 2
+            },
+            {
+                "id": 527,
+                "msg": "Find wrong cali ERROR!",
+                "param_num": 0
+            },
+            {
+                "id": 528,
+                "msg": "diff_freq = target - cali_R_min = %d",
+                "param_num": 1
+            },
+            {
+                "id": 529,
+                "msg": "Fatal error! Target=%d Ans_min=%d",
+                "param_num": 2
+            },
+            {
+                "id": 530,
+                "msg": "Target_freq=%d @ new_freq=%d\\n",
+                "param_num": 2
+            },
+            {
+                "id": 531,
+                "msg": "[ERROR]ULTRA_HIGH_CLK(>180M) NOT ENABLED : %dMHz",
+                "param_num": 1
+            },
+            {
+                "id": 532,
+                "msg": "Cali data MAX = %d @ MIN = %d",
+                "param_num": 2
+            },
+            {
+                "id": 533,
+                "msg": "Temp target change to %d KHz, div = %d \\n",
+                "param_num": 2
+            },
+            {
+                "id": 534,
+                "msg": "cali_R = %d",
+                "param_num": 1
+            },
+            {
+                "id": 535,
+                "msg": "cali_FT = %d",
+                "param_num": 1
+            },
+            {
+                "id": 536,
+                "msg": "SYS clk %d MHz @ R = %d @ FT = %d @ DIV = %d",
+                "param_num": 4
+            },
+            {
+                "id": 537,
+                "msg": "Cali table write retry",
+                "param_num": 0
+            },
+            {
+                "id": 538,
+                "msg": "[ERROR] increase SYS CLK Failure",
+                "param_num": 0
+            },
+            {
+                "id": 539,
+                "msg": "[ERROR] decrease SYS CLK Failure",
+                "param_num": 0
+            },
+            {
+                "id": 540,
+                "msg": "drv_sys_dmaRead4Bytes 0x%08x",
+                "param_num": 1
+            },
+            {
+                "id": 541,
+                "msg": "meta[0] 0x%08x @ 0x%08x",
+                "param_num": 2
+            },
+            {
+                "id": 542,
+                "msg": "Addr 0x%08x ptr_cur_offset raw 0x%08x",
+                "param_num": 2
+            },
+            {
+                "id": 543,
+                "msg": "Cali = 0x%x FT = 0x%x",
+                "param_num": 2
+            },
+            {
+                "id": 544,
+                "msg": "[ERROR] Cali type %d not found",
+                "param_num": 1
+            },
+            {
+                "id": 545,
+                "msg": "[ERROR] invalid size for calculate chksum",
+                "param_num": 0
+            },
+            {
+                "id": 546,
+                "msg": "Updata factory meta offset %d size %d",
+                "param_num": 2
+            },
+            {
+                "id": 547,
+                "msg": "[ERROR] Factory header chksum fail",
+                "param_num": 0
+            },
+            {
+                "id": 548,
+                "msg": "[ERROR] Factory meta id %d chksum fail",
+                "param_num": 1
+            },
+            {
+                "id": 549,
+                "msg": "[ERROR] Factory meta id not found",
+                "param_num": 0
+            },
+            {
+                "id": 550,
+                "msg": "[ERROR] Flash Factory meta header not found",
+                "param_num": 0
+            },
+            {
+                "id": 551,
+                "msg": "Load Snapshot with idx %s",
+                "param_num": 1
+            },
+            {
+                "id": 552,
+                "msg": "dsp_preprocess",
+                "param_num": 0
+            },
+            {
+                "id": 553,
+                "msg": "Pre FFT in && x_in_rdy",
+                "param_num": 0
+            },
+            {
+                "id": 554,
+                "msg": "FFT out",
+                "param_num": 0
+            },
+            {
+                "id": 555,
+                "msg": "dsp_postprocess",
+                "param_num": 0
+            },
+            {
+                "id": 556,
+                "msg": "Post iFFT in",
+                "param_num": 0
+            },
+            {
+                "id": 557,
+                "msg": "iFFT out",
+                "param_num": 0
+            },
+            {
+                "id": 558,
+                "msg": "FFT in && x_in_rdy = %d %d",
+                "param_num": 2
+            },
+            {
+                "id": 559,
+                "msg": "Wait vid_rdy == 0",
+                "param_num": 0
+            },
+            {
+                "id": 560,
+                "msg": "func_vad vad_cnt: %d vad_state: %d mlog_sum_acc: %d",
+                "param_num": 3
+            },
+            {
+                "id": 561,
+                "msg": "Wait x_in_rdy == 0",
+                "param_num": 0
+            },
+            {
+                "id": 562,
+                "msg": "NPU in",
+                "param_num": 0
+            },
+            {
+                "id": 563,
+                "msg": "NPU out",
+                "param_num": 0
+            },
+            {
+                "id": 564,
+                "msg": "vid enroll!",
+                "param_num": 0
+            },
+            {
+                "id": 565,
+                "msg": "Boot cfg size %d",
+                "param_num": 1
+            },
+            {
+                "id": 566,
+                "msg": "Cali type %d not found",
+                "param_num": 1
+            },
+            {
+                "id": 567,
+                "msg": "Not Implement",
+                "param_num": 0
+            },
+            {
+                "id": 568,
+                "msg": "batch cmd %d",
+                "param_num": 1
+            },
+            {
+                "id": 569,
+                "msg": "batch cmd[%d] cmd(0x%08x) data(0x%08x) ret(0x%08x)",
+                "param_num": 4
+            },
+            {
+                "id": 570,
+                "msg": "Parsing CMD",
+                "param_num": 0
+            },
+            {
+                "id": 571,
+                "msg": "date code = 0x%x @ 0x%x",
+                "param_num": 2
+            },
+            {
+                "id": 572,
+                "msg": "DUAL_DMIC_RX",
+                "param_num": 0
+            },
+            {
+                "id": 573,
+                "msg": "SINGLE_DMIC_RX",
+                "param_num": 0
+            },
+            {
+                "id": 574,
+                "msg": "ADC_RX_2CH",
+                "param_num": 0
+            },
+            {
+                "id": 575,
+                "msg": "SINGLE_DMIC_TX",
+                "param_num": 0
+            },
+            {
+                "id": 576,
+                "msg": "I2S TX SIDETONE",
+                "param_num": 0
+            },
+            {
+                "id": 577,
+                "msg": "I2S TX",
+                "param_num": 0
+            },
+            {
+                "id": 578,
+                "msg": "DSP_FFTIFFT",
+                "param_num": 0
+            },
+            {
+                "id": 579,
+                "msg": "IGO parser run",
+                "param_num": 0
+            },
+            {
+                "id": 580,
+                "msg": "npu_main init",
+                "param_num": 0
+            },
+            {
+                "id": 581,
+                "msg": "BONDINGID %d != %d use incorrect bin file",
+                "param_num": 2
+            },
+            {
+                "id": 582,
+                "msg": "LLNR DMIC mode",
+                "param_num": 0
+            },
+            {
+                "id": 583,
+                "msg": "LLNR I2S mode",
+                "param_num": 0
+            },
+            {
+                "id": 584,
+                "msg": "TMULLNR",
+                "param_num": 0
+            },
+            {
+                "id": 585,
+                "msg": "cnt = %d",
+                "param_num": 1
+            },
+            {
+                "id": 586,
+                "msg": "tx_rpt = %d",
+                "param_num": 1
+            },
+            {
+                "id": 587,
+                "msg": "rx_wpt= %d",
+                "param_num": 1
+            },
+            {
+                "id": 588,
+                "msg": "e2e_fillcnt = %d",
+                "param_num": 1
+            },
+            {
+                "id": 589,
+                "msg": "dif_e2e_fillcnt = = =%d",
+                "param_num": 1
+            },
+            {
+                "id": 590,
+                "msg": "K0_phase_inc = = = =%d",
+                "param_num": 1
+            },
+            {
+                "id": 591,
+                "msg": "k1_phase_inc = = = = =%d",
+                "param_num": 1
+            },
+            {
+                "id": 592,
+                "msg": "No PAYLOAD",
+                "param_num": 0
+            },
+            {
+                "id": 593,
+                "msg": "Note : Use Default PAYLOAD_START_ADDR = 0x05000000",
+                "param_num": 0
+            },
+            {
+                "id": 594,
+                "msg": "Note : Use Custom PAYLOAD_START_ADDR = %d",
+                "param_num": 1
+            },
+            {
+                "id": 595,
+                "msg": "PAYLOAD CMP ERROR",
+                "param_num": 0
+            },
+            {
+                "id": 596,
+                "msg": "Start PAYLOAD",
+                "param_num": 0
+            },
+            {
+                "id": 597,
+                "msg": "kws_detected && vid_valid:%d",
+                "param_num": 1
+            },
+            {
+                "id": 598,
+                "msg": "Interrupt triggered! tango_frame_cnt:%d",
+                "param_num": 1
+            },
+            {
+                "id": 599,
+                "msg": "call kws_hit_interrupt()",
+                "param_num": 0
+            },
+            {
+                "id": 600,
+                "msg": "Bypass check_ck",
+                "param_num": 0
+            },
+            {
+                "id": 601,
+                "msg": "DSP chk vbf %d clk",
+                "param_num": 1
+            },
+            {
+                "id": 602,
+                "msg": "DSP chk vbf %d tx ok",
+                "param_num": 1
+            },
+            {
+                "id": 603,
+                "msg": "DSP chk vbf %d rx ok",
+                "param_num": 1
+            },
+            {
+                "id": 604,
+                "msg": "audi_dmic_s_config %d 0x%08x",
+                "param_num": 2
+            },
+            {
+                "id": 605,
+                "msg": "Loading AFE_RX_1M_TO_16K_DSR_64_FADDR_ID.",
+                "param_num": 0
+            },
+            {
+                "id": 606,
+                "msg": "Loading AFE_TX_16K_TO_1M_VBLL_FADDR_ID.",
+                "param_num": 0
+            },
+            {
+                "id": 607,
+                "msg": "HIF will be disconnected soon because DAI3 is switched to I2S mode.",
+                "param_num": 0
+            },
+            {
+                "id": 608,
+                "msg": "skip audi_afe_config",
+                "param_num": 0
+            },
+            {
+                "id": 609,
+                "msg": "before fci_write",
+                "param_num": 0
+            },
+            {
+                "id": 610,
+                "msg": "before fci_write2",
+                "param_num": 0
+            },
+            {
+                "id": 611,
+                "msg": "Device start count 0x%08x",
+                "param_num": 1
+            },
+            {
+                "id": 612,
+                "msg": "Start SYSC = %d F1M = %d",
+                "param_num": 2
+            },
+            {
+                "id": 613,
+                "msg": "Stop  SYSC = %d F1M = %d",
+                "param_num": 2
+            },
+            {
+                "id": 614,
+                "msg": "SYS diff = %d F1M diff = %d Ratio of SYS/F1M = %d",
+                "param_num": 3
+            },
+            {
+                "id": 615,
+                "msg": "Cali=%d FT=%d LFOSC freq =%d KHz",
+                "param_num": 3
+            },
+            {
+                "id": 616,
+                "msg": "Stop SYSC  = %d F1M = %d",
+                "param_num": 2
+            },
+            {
+                "id": 617,
+                "msg": "Cali=%d FT=%d Sysdiv=%d HFOSC freq =%d KHz",
+                "param_num": 4
+            },
+            {
+                "id": 618,
+                "msg": "dlk3s phase3 TEST TEST TEST",
+                "param_num": 0
+            },
+            {
+                "id": 619,
+                "msg": "New freq = %d",
+                "param_num": 1
+            },
+            {
+                "id": 620,
+                "msg": "[Warning] FDOSC init: FDOSC %d rdly need tuning.",
+                "param_num": 1
+            },
+            {
+                "id": 621,
+                "msg": "FDOSC init: FDOSC %d cnt = %d",
+                "param_num": 2
+            },
+            {
+                "id": 622,
+                "msg": "FDOSC init: FDOSC_adj = 0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 623,
+                "msg": "FDOSC init: tsync diff = %d",
+                "param_num": 1
+            },
+            {
+                "id": 624,
+                "msg": "FDOSC init: FDOSC %d last cnt = %d",
+                "param_num": 2
+            },
+            {
+                "id": 625,
+                "msg": "FDOSC init: adj = 0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 626,
+                "msg": "FDOSC init: freq = %dk",
+                "param_num": 1
+            },
+            {
+                "id": 627,
+                "msg": "tango_faddr_base 0x%08x",
+                "param_num": 1
+            },
+            {
+                "id": 628,
+                "msg": "E2 sys_tango_init TBD",
+                "param_num": 0
+            },
+            {
+                "id": 629,
+                "msg": "E2 platorm_readExtMem TBD",
+                "param_num": 0
+            },
+            {
+                "id": 630,
+                "msg": "BOOT MEM is PSRAM Not Support Now",
+                "param_num": 0
+            },
+            {
+                "id": 631,
+                "msg": "Not impelemnet now Todo",
+                "param_num": 0
+            },
+            {
+                "id": 632,
+                "msg": "TDM_BCKCTL = %d",
+                "param_num": 1
+            },
+            {
+                "id": 633,
+                "msg": "TDM_CTL0   = %d",
+                "param_num": 1
+            },
+            {
+                "id": 634,
+                "msg": "TDM_CTL1   = %d",
+                "param_num": 1
+            },
+            {
+                "id": 635,
+                "msg": "TDM_CTL2   = %d",
+                "param_num": 1
+            },
+            {
+                "id": 636,
+                "msg": "RX: MMIO16(%8.8X) = %8.8X\\n",
+                "param_num": 2
+            },
+            {
+                "id": 637,
+                "msg": "TX: MMIO16(%8.8X) = %8.8X\\n",
+                "param_num": 2
+            },
+            {
+                "id": 638,
+                "msg": "Running batch",
+                "param_num": 0
+            },
+            {
+                "id": 639,
+                "msg": "Check Flash id fail. flash id = %d",
+                "param_num": 1
+            },
+            {
+                "id": 640,
+                "msg": "FLASH TEST PASS",
+                "param_num": 0
+            },
+            {
+                "id": 641,
+                "msg": "FLASH TEST FAIL",
+                "param_num": 0
+            },
+            {
+                "id": 642,
+                "msg": "pdd irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 643,
+                "msg": "aod irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 644,
+                "msg": "udd irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 645,
+                "msg": "AMA SDC IRQ TEST PASS",
+                "param_num": 0
+            },
+            {
+                "id": 646,
+                "msg": "KMA SDC IRQ TEST PASS",
+                "param_num": 0
+            },
+            {
+                "id": 647,
+                "msg": "UMA SDC IRQ TEST PASS",
+                "param_num": 0
+            },
+            {
+                "id": 648,
+                "msg": "SPM IRQ TEST PASS",
+                "param_num": 0
+            },
+            {
+                "id": 649,
+                "msg": "irq test",
+                "param_num": 0
+            },
+            {
+                "id": 650,
+                "msg": "RX OVERFLOW %d %d",
+                "param_num": 2
+            },
+            {
+                "id": 651,
+                "msg": "TX OVERFLOW %d",
+                "param_num": 1
+            },
+            {
+                "id": 652,
+                "msg": "RX %d vb %d ",
+                "param_num": 2
+            },
+            {
+                "id": 653,
+                "msg": "TX %d vb %d ",
+                "param_num": 2
+            },
+            {
+                "id": 654,
+                "msg": "SPM INGRES START",
+                "param_num": 0
+            },
+            {
+                "id": 655,
+                "msg": "tsm irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 656,
+                "msg": "TSP IRQ TEST PASS",
+                "param_num": 0
+            },
+            {
+                "id": 657,
+                "msg": "tsp irq test",
+                "param_num": 0
+            },
+            {
+                "id": 658,
+                "msg": "TMU CRNR",
+                "param_num": 0
+            },
+            {
+                "id": 659,
+                "msg": "i2c master 8 bit mode fail",
+                "param_num": 0
+            },
+            {
+                "id": 660,
+                "msg": "i2c master 8 bit mode pass",
+                "param_num": 0
+            },
+            {
+                "id": 661,
+                "msg": "TMU IRQ TEST PASS",
+                "param_num": 0
+            },
+            {
+                "id": 662,
+                "msg": "AINR2.0 pre/post processing is running ... ",
+                "param_num": 0
+            },
+            {
+                "id": 663,
+                "msg": "index %d %d %d %d %d %d %d %d",
+                "param_num": 8
+            },
+            {
+                "id": 664,
+                "msg": "AINR2.0 512P PASS.",
+                "param_num": 0
+            },
+            {
+                "id": 665,
+                "msg": "AINR2.0 512P FAIL. sum = %d golden = %d",
+                "param_num": 2
+            },
+            {
+                "id": 666,
+                "msg": "NR1.0 1024P pre/post processing is running ... ",
+                "param_num": 0
+            },
+            {
+                "id": 667,
+                "msg": "fft_output_sum = %d sd_gain = %d",
+                "param_num": 2
+            },
+            {
+                "id": 668,
+                "msg": "lps_offset = %d",
+                "param_num": 1
+            },
+            {
+                "id": 669,
+                "msg": "FAST_NORM lps_norm_sum = %d",
+                "param_num": 1
+            },
+            {
+                "id": 670,
+                "msg": "lps_sum = %d",
+                "param_num": 1
+            },
+            {
+                "id": 671,
+                "msg": "lps_norm_sum = %d",
+                "param_num": 1
+            },
+            {
+                "id": 672,
+                "msg": "after merge fft sum = %d",
+                "param_num": 1
+            },
+            {
+                "id": 673,
+                "msg": "after ifft and win sum = %d",
+                "param_num": 1
+            },
+            {
+                "id": 674,
+                "msg": "[ERROR] fft sum = %d golden_sun = %d",
+                "param_num": 2
+            },
+            {
+                "id": 675,
+                "msg": "[ERROR] fft shift = %d golden_shift = %d",
+                "param_num": 2
+            },
+            {
+                "id": 676,
+                "msg": "[ERROR] lps sum = %d golden_sun = %d",
+                "param_num": 2
+            },
+            {
+                "id": 677,
+                "msg": "[ERROR] lps norm sum = %d golden_sun = %d",
+                "param_num": 2
+            },
+            {
+                "id": 678,
+                "msg": "[ERROR] merge fft sum = %d golden_sun = %d",
+                "param_num": 2
+            },
+            {
+                "id": 679,
+                "msg": "[ERROR] ifft out sum = %d golden_sun = %d",
+                "param_num": 2
+            },
+            {
+                "id": 680,
+                "msg": "NR1.0 1024P ALL PASS. FAST_NORM %d. HW_MERGE %d. REFILL_IFFT_DATA %d",
+                "param_num": 3
+            },
+            {
+                "id": 681,
+                "msg": "GOYA pre/post processing is running ... ",
+                "param_num": 0
+            },
+            {
+                "id": 682,
+                "msg": "GOYA FAIL sum = %d golden = %d",
+                "param_num": 2
+            },
+            {
+                "id": 683,
+                "msg": "GOYA PASS 1.sum = %d golden = %d 2.sum = %d golden = %d",
+                "param_num": 4
+            },
+            {
+                "id": 684,
+                "msg": "Bypass log fail. sum = %d golden = %d",
+                "param_num": 2
+            },
+            {
+                "id": 685,
+                "msg": "Bypass log pass. sum = %d golden = %d",
+                "param_num": 2
+            },
+            {
+                "id": 686,
+                "msg": "NR1.0 512P pre/post processing is running ... ",
+                "param_num": 0
+            },
+            {
+                "id": 687,
+                "msg": "fft_output_sum = %d lps_sum = %d shift value = %d",
+                "param_num": 3
+            },
+            {
+                "id": 688,
+                "msg": "NR1.0 512P ALL PASS. HW_MERGE = %d",
+                "param_num": 1
+            },
+            {
+                "id": 689,
+                "msg": "MFCC WIN + FFT is running ... ",
+                "param_num": 0
+            },
+            {
+                "id": 690,
+                "msg": "MFCC WIN + FFT PASS.",
+                "param_num": 0
+            },
+            {
+                "id": 691,
+                "msg": "MFCC WIN + FFT FAIL.",
+                "param_num": 0
+            },
+            {
+                "id": 692,
+                "msg": "MFCC win_to_normalize is running ... ",
+                "param_num": 0
+            },
+            {
+                "id": 693,
+                "msg": "MFCC win_to_normalize PASS.",
+                "param_num": 0
+            },
+            {
+                "id": 694,
+                "msg": "MFCC win_to_normalize FAIL.",
+                "param_num": 0
+            },
+            {
+                "id": 695,
+                "msg": "MFCC IFFT is running ... ",
+                "param_num": 0
+            },
+            {
+                "id": 696,
+                "msg": "MFCC iFFT PASS.",
+                "param_num": 0
+            },
+            {
+                "id": 697,
+                "msg": "MFCC iFFT FAIL.",
+                "param_num": 0
+            },
+            {
+                "id": 698,
+                "msg": "MFCC MERGE is running ... ",
+                "param_num": 0
+            },
+            {
+                "id": 699,
+                "msg": "MFCC MERGE PASS.",
+                "param_num": 0
+            },
+            {
+                "id": 700,
+                "msg": "MFCC MERGE FAIL.",
+                "param_num": 0
+            },
+            {
+                "id": 701,
+                "msg": "MFCC LPS_NORM_PHASE is running ... ",
+                "param_num": 0
+            },
+            {
+                "id": 702,
+                "msg": "MFCC lps norm phase PASS.",
+                "param_num": 0
+            },
+            {
+                "id": 703,
+                "msg": "MFCC lps norm phase FAIL.",
+                "param_num": 0
+            },
+            {
+                "id": 704,
+                "msg": "MFCC Only LPS+fast_norm is running ... ",
+                "param_num": 0
+            },
+            {
+                "id": 705,
+                "msg": "PASS",
+                "param_num": 0
+            },
+            {
+                "id": 706,
+                "msg": "FAIL lps_sum = %d norm_sum = %d",
+                "param_num": 2
+            },
+            {
+                "id": 707,
+                "msg": "NR2 Only LPS_PHASE is running ... ",
+                "param_num": 0
+            },
+            {
+                "id": 708,
+                "msg": "FAIL lps_sum = %d phase_sum = %d",
+                "param_num": 2
+            },
+            {
+                "id": 709,
+                "msg": "kaldi is running ... [1] Fix_pattern [2] Random_pattern",
+                "param_num": 0
+            },
+            {
+                "id": 710,
+                "msg": "[1] Fix pattern Test Pass",
+                "param_num": 0
+            },
+            {
+                "id": 711,
+                "msg": "[1] Fix pattern Test Fail. dct sum = %d no dct sum = %d",
+                "param_num": 2
+            },
+            {
+                "id": 712,
+                "msg": "[2] Random pattern Test Pass",
+                "param_num": 0
+            },
+            {
+                "id": 713,
+                "msg": "[2] Random pattern Test Fail. random sum %d dct sum = %d no dct sum = %d",
+                "param_num": 3
+            },
+            {
+                "id": 714,
+                "msg": "%d %d",
+                "param_num": 2
+            },
+            {
+                "id": 715,
+                "msg": "tdm master mode",
+                "param_num": 0
+            },
+            {
+                "id": 716,
+                "msg": "tdm slave mode",
+                "param_num": 0
+            },
+            {
+                "id": 717,
+                "msg": "tdm master mode 24 bit",
+                "param_num": 0
+            },
+            {
+                "id": 718,
+                "msg": "tdm bone_mic test",
+                "param_num": 0
+            },
+            {
+                "id": 719,
+                "msg": "Channel 1 PASS",
+                "param_num": 0
+            },
+            {
+                "id": 720,
+                "msg": "Channel 1 FAIL",
+                "param_num": 0
+            },
+            {
+                "id": 721,
+                "msg": "Channel 2 PASS",
+                "param_num": 0
+            },
+            {
+                "id": 722,
+                "msg": "Channel 2 FAIL",
+                "param_num": 0
+            },
+            {
+                "id": 723,
+                "msg": "vbf ft test fail",
+                "param_num": 0
+            },
+            {
+                "id": 724,
+                "msg": "vbf all pass",
+                "param_num": 0
+            },
+            {
+                "id": 725,
+                "msg": "%d NR2 SUM = %d %d gold = %d",
+                "param_num": 4
+            },
+            {
+                "id": 726,
+                "msg": "ERROR",
+                "param_num": 0
+            },
+            {
+                "id": 727,
+                "msg": "TMU INGRES INIT",
+                "param_num": 0
+            },
+            {
+                "id": 728,
+                "msg": "TMU INGRES INIT1",
+                "param_num": 0
+            },
+            {
+                "id": 729,
+                "msg": "TMU INGRES INIT2",
+                "param_num": 0
+            },
+            {
+                "id": 730,
+                "msg": "g_pri_port %d g_mem_type %d",
+                "param_num": 2
+            },
+            {
+                "id": 731,
+                "msg": "OPMODE %d",
+                "param_num": 1
+            },
+            {
+                "id": 732,
+                "msg": "TMU ML AEC/AES START",
+                "param_num": 0
+            },
+            {
+                "id": 733,
+                "msg": "CONV %d %d",
+                "param_num": 2
+            },
+            {
+                "id": 734,
+                "msg": "DWCONV %d %d",
+                "param_num": 2
+            },
+            {
+                "id": 735,
+                "msg": "GRU %d %d",
+                "param_num": 2
+            },
+            {
+                "id": 736,
+                "msg": "TRANSPOSECONV %d %d",
+                "param_num": 2
+            },
+            {
+                "id": 737,
+                "msg": "VP %d is not supported yet!",
+                "param_num": 1
+            },
+            {
+                "id": 738,
+                "msg": "%d %d %d %d",
+                "param_num": 4
+            },
+            {
+                "id": 739,
+                "msg": "Not Support ROSCx DIV Now",
+                "param_num": 0
+            },
+            {
+                "id": 740,
+                "msg": "PLL0 PWD %d %d %d",
+                "param_num": 3
+            },
+            {
+                "id": 741,
+                "msg": "PLL1 PWD %d %d %d",
+                "param_num": 3
+            },
+            {
+                "id": 742,
+                "msg": "ERROR122401 Please Open Target 0x%x Parent clk 0x%x",
+                "param_num": 2
+            },
+            {
+                "id": 743,
+                "msg": "Todo Check Parent clk %d enough to produce target 0x%x freq %d",
+                "param_num": 3
+            },
+            {
+                "id": 744,
+                "msg": "Error Path Target %d p_id %x",
+                "param_num": 2
+            },
+            {
+                "id": 745,
+                "msg": "seek_clk_template Set CLK Target 0x%x to freq %d p_id 0x%x",
+                "param_num": 3
+            },
+            {
+                "id": 746,
+                "msg": "seek_clk_digital Set CLK Target 0x%x to freq %d p_id 0x%x",
+                "param_num": 3
+            },
+            {
+                "id": 747,
+                "msg": "Error Path Target %d p_id %x seek_clk_digital",
+                "param_num": 2
+            },
+            {
+                "id": 748,
+                "msg": "SYS CLK id = 0x%x : freq = %4d K parent = 0x%x (effective_parent 0x%x) ref_cnt = %2d",
+                "param_num": 5
+            },
+            {
+                "id": 749,
+                "msg": "DOMAIN : cur_dommain %d freq = %4d K parent = 0x%x",
+                "param_num": 3
+            },
+            {
+                "id": 750,
+                "msg": "Notify target 0x%x freq %d final freq %d",
+                "param_num": 3
+            },
+            {
+                "id": 751,
+                "msg": "Set PHY 0x%x to freq %d",
+                "param_num": 2
+            },
+            {
+                "id": 752,
+                "msg": "ERROR010401 Please Open Target 0x%x clk %x",
+                "param_num": 2
+            },
+            {
+                "id": 753,
+                "msg": "PHY CLK id = 0x%x : freq = %4d K parent = 0x%x ref_cnt = %2d",
+                "param_num": 4
+            },
+            {
+                "id": 754,
+                "msg": "Not Support Old format",
+                "param_num": 0
+            },
+            {
+                "id": 755,
+                "msg": "RX OVERFLOW %d",
+                "param_num": 1
+            },
+            {
+                "id": 756,
+                "msg": "SPM CRNR START",
+                "param_num": 0
+            },
+            {
+                "id": 757,
+                "msg": "ama pdd irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 758,
+                "msg": "ama aod irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 759,
+                "msg": "ama udd irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 760,
+                "msg": "kma pdd irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 761,
+                "msg": "kma aod irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 762,
+                "msg": "kma udd irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 763,
+                "msg": "uma pdd irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 764,
+                "msg": "uma aod irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 765,
+                "msg": "uma udd irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 766,
+                "msg": "spm pdd irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 767,
+                "msg": "spm aod irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 768,
+                "msg": "spm udd irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 769,
+                "msg": "tsp irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 770,
+                "msg": "tmu pdd irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 771,
+                "msg": "tmu aod irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 772,
+                "msg": "tmu udd irq cnt %d",
+                "param_num": 1
+            },
+            {
+                "id": 773,
+                "msg": "kws_hit_interrupt() m_VAD_INT_PIN:%d",
+                "param_num": 1
+            },
+            {
+                "id": 774,
+                "msg": "%s %d ERROR \\n",
+                "param_num": 2
+            },
+            {
+                "id": 775,
+                "msg": "%s %d WARNING output_depth %d %d\\n",
+                "param_num": 4
+            },
+            {
+                "id": 776,
+                "msg": "%s %d Reorder N %d H %d W %d C %d\\n",
+                "param_num": 6
+            },
+            {
+                "id": 777,
+                "msg": "%s %d Error Not Support H > 1 now\\n",
+                "param_num": 2
+            },
+            {
+                "id": 778,
+                "msg": "%s %d Error \\n",
+                "param_num": 2
+            },
+            {
+                "id": 779,
+                "msg": "%s %d len %d \\n",
+                "param_num": 3
+            },
+            {
+                "id": 780,
+                "msg": "Error - VAD md dl not complete!!",
+                "param_num": 0
+            },
+            {
+                "id": 781,
+                "msg": "drv_hal_vad_cmd_vad_enroll_md_buf_write offset %d len %d first data 0x%08x",
+                "param_num": 3
+            },
+            {
+                "id": 782,
+                "msg": "drv_hal_vad_cmd_vad_enroll_md_buf_read offset %d len %d first data 0x%08x",
+                "param_num": 3
+            },
+            {
+                "id": 783,
+                "msg": "process E1 cmd",
+                "param_num": 0
+            },
+            {
+                "id": 784,
+                "msg": "base addr 0x%x",
+                "param_num": 1
+            },
+            {
+                "id": 785,
+                "msg": "process COMMON cmd",
+                "param_num": 0
+            },
+            {
+                "id": 786,
+                "msg": "process NR cmd",
+                "param_num": 0
+            },
+            {
+                "id": 787,
+                "msg": "process VAD cmd",
+                "param_num": 0
+            },
+            {
+                "id": 788,
+                "msg": "process EFFECT cmd",
+                "param_num": 0
+            },
+            {
+                "id": 789,
+                "msg": "process AEC cmd",
+                "param_num": 0
+            },
+            {
+                "id": 790,
+                "msg": "process AFC cmd",
+                "param_num": 0
+            },
+            {
+                "id": 791,
+                "msg": "process ENC cmd",
+                "param_num": 0
+            },
+            {
+                "id": 792,
+                "msg": "[ERROR] Not support parser group %d\\n",
+                "param_num": 1
+            },
+            {
+                "id": 793,
+                "msg": "[ERROR] cmd group %d exceed Max %d",
+                "param_num": 2
+            },
+            {
+                "id": 794,
+                "msg": "===========> time = %f ; A = %d lz_A = %d\\n",
+                "param_num": 3
+            },
+            {
+                "id": 795,
+                "msg": "Igo media intf: Wrong OP mode\\n",
+                "param_num": 0
+            },
+            {
+                "id": 796,
+                "msg": "Igo media intf: Wrong input\\n",
+                "param_num": 0
+            },
+            {
+                "id": 797,
+                "msg": "Igo media intf: Wrong reference\\n",
+                "param_num": 0
+            },
+            {
+                "id": 798,
+                "msg": "Igo media intf: Wrong output\\n",
+                "param_num": 0
+            },
+            {
+                "id": 799,
+                "msg": "Igo media intf: Wrong\\n",
+                "param_num": 0
+            },
+            {
+                "id": 800,
+                "msg": "Igo media intf: Wrong Sampling Rate\\n",
+                "param_num": 0
+            },
+            {
+                "id": 801,
+                "msg": "[ERROR] igo cmd parsing error\\n",
+                "param_num": 0
+            }
+        ]
+    }
+}
