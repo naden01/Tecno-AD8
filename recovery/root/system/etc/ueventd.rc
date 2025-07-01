@@ -74,7 +74,7 @@ subsystem dma_heap
 # Virtualisation is managed by Virt Manager
 /dev/kvm                  0600   virtmanager root
 /dev/vhost-vsock          0600   virtmanager root
-
+#nazehere
 # sysfs properties
 /sys/devices/platform/trusty.*      trusty_version        0440  root   log
 /sys/devices/virtual/input/input*   enable      0660  root   input

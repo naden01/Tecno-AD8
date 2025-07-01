@@ -1,4 +1,5 @@
 # Android fstab file.
+# n4z3
 # The filesystem that contains the filesystem checker binary (typically /system) cannot
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
@@ -49,3 +50,4 @@
 # Removable Storage
 /external_sd		auto		/dev/block/mmcblk1p1				/dev/block/mmcblk0p1					flags=display="Micro SD Card";storage;wipeingui;removable;backup=0
 /usb_otg		auto		/dev/block/sda1					/dev/block/sda		/dev/block/sdd1			flags=display="USB-OTG";storage;wipeingui;removable;backup=0
+# n4z3
